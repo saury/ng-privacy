@@ -1,0 +1,15 @@
+.panel-header {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 66px;
+  padding-left: 20px;
+  line-height: 64px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media all and (min-width: 660px) {
+  .panel-header {
+      padding-left: 30px;
+    }
+}

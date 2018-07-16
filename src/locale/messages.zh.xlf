@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ed13cd358c92dc367e62217b1c0d030a0c03a8ce" datatype="html">
+<source>EF Privacy Policy</source>
+        <target>隐私政策</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/panel-header/panel-header.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06c3fc0e0b48352179000e5e167012d489edf0ee" datatype="html">
+      <source>Yes, I agree</source>
+        <target>我同意</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/panel-footer/panel-footer.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -24,8 +24,7 @@ export class ScrollDirective implements OnChanges, OnDestroy {
    }
 
    ngOnChanges() {
-     console.log(this.scroll);
-    //  this.scroll.refresh();
+     this.scroll.refresh();
    }
 
    ngOnDestroy() {

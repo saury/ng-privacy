@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FramesetComponent } from './frameset/frameset.component';
 import { PanelComponent } from './panel/panel.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { PanelHeaderComponent } from './panel-header/panel-header.component';
 import { PanelBodyComponent } from './panel-body/panel-body.component';
@@ -22,12 +23,18 @@ import { ScrollDirective } from './scroll.directive';
     PanelBodyComponent,
     PanelFooterComponent,
     SafeHtmlPipe,
-    ScrollDirective
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: AppComponent,
+      },
+    ]),
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

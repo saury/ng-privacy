@@ -8,12 +8,10 @@ if (environment.production) {
   enableProdMode();
 }
 
-const translations = require(`raw-loader!./locale/messages.zh.xlf`);
+const translations = require(`raw-loader!./locale/messages.ru.xlf`);
 
-platformBrowserDynamic().bootstrapModule(AppModule, {
-  providers: [
-    {provide: TRANSLATIONS, useValue: translations},
-    {provide: TRANSLATIONS_FORMAT, useValue: 'xlf'}
-  ]
-})
-.catch(err => console.log(err));
+platformBrowserDynamic()
+  .bootstrapModule(AppModule, {
+    providers: [{ provide: TRANSLATIONS, useValue: translations }, { provide: TRANSLATIONS_FORMAT, useValue: 'xlf' }],
+  })
+  .catch((err) => console.log(err));
